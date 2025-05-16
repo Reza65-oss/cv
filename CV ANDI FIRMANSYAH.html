@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Andi Firmansyah</title>
+  <style>
+    /* Reset dasar */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f8; color: #333; line-height: 1.6; padding: 20px; }
+    a { color: #005f73; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Container */
+    .container { width: 100%; max-width: 800px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: auto; min-height: calc(100vh - 40px); display: flex; flex-direction: column; }
+
+    /* Header */
+    .header { background: linear-gradient(135deg, #005f73 0%, #0a9396 100%); color: #fff; padding: 40px 30px 40px 180px; position: relative; flex-shrink: 0; }
+    .profile-pic { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 4px solid #ee9b00; position: absolute; top: 50%; left: 30px; transform: translateY(-50%); }
+    .header h1 { font-size: 2.5em; margin-bottom: 5px; }
+    .contact-info { margin-top: 10px; font-size: 0.9em; }
+    .contact-info span { margin-right: 15px; }
+
+    /* Summary Cards */
+    .summary { display: flex; justify-content: space-around; padding: 20px 30px; background: #e0fbfc; flex-shrink: 0; }
+    .card { text-align: center; }
+    .card h3 { font-size: 1.5em; color: #005f73; margin-bottom: 5px; }
+    .card p { font-size: 0.9em; color: #555; }
+
+    /* Content */
+    .content { display: flex; flex-wrap: wrap; padding: 30px; flex: 1; }
+    .left, .right { padding: 15px; }
+    .left { flex: 1 1 35%; }
+    .right { flex: 1 1 65%; }
+
+    /* Section Title */
+    .section-title { margin-bottom: 15px; font-size: 1.3em; color: #005f73; position: relative; padding-bottom: 5px; }
+    .section-title::after { content: ''; width: 50px; height: 3px; background: #ee9b00; position: absolute; left: 0; bottom: 0; }
+    .section { margin-bottom: 25px; }
+
+    /* List */
+    ul { list-style: none; }
+    ul li { margin-bottom: 10px; padding-left: 20px; position: relative; }
+    ul li::before { content: '•'; position: absolute; left: 0; color: #ee9b00; }
+
+    /* Skills Bar */
+    .skill { margin-bottom: 15px; }
+    .skill-name { display: flex; justify-content: space-between; font-size: 0.9em; margin-bottom: 5px; }
+    .skill-bar { width: 100%; height: 8px; background: #ddd; border-radius: 4px; overflow: hidden; }
+    .skill-level { height: 100%; background: #005f73; }
+
+    /* Experience Timeline */
+    .experience-item { margin-bottom: 20px; position: relative; padding-left: 20px; }
+    .experience-item::before { content: ''; position: absolute; left: 8px; top: 5px; width: 10px; height: 10px; background: #ee9b00; border-radius: 50%; }
+    .experience-item h4 { font-size: 1.1em; color: #0a9396; margin-bottom: 3px; }
+    .experience-item span { font-size: 0.85em; color: #555; }
+    .experience-item p { margin-top: 6px; font-size: 0.95em; }
+
+    /* Footer */
+    .footer { background: #005f73; color: #fff; text-align: center; padding: 15px; font-size: 0.9em; flex-shrink: 0; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header { padding: 30px; text-align: center; }
+      .profile-pic { position: static; margin: 0 auto 15px; transform: none; }
+      .content { flex-direction: column; }
+      .summary { flex-direction: column; }
+      .summary .card { margin-bottom: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img src="andi foto.jpg!s2" class="profile-pic">
+      <h1>Andi Firmansyah</h1>
+      <div class="contact-info">
+        <span>✉️ andi.firmansyah@example.com</span>
+        <span>📞 +62 812-3456-7890</span>
+        <span>📍 Bandung, Indonesia</span>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <div class="card">
+        <h3>1+ Tahun</h3>
+        <p>Pengalaman</p>
+      </div>
+      <div class="card">
+        <h3>5+</h3>
+        <p>Proyek</p>
+      </div>
+      <div class="card">
+        <h3>4.0</h3>
+        <p>IPK</p>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="left">
+        <div class="section">
+          <h3 class="section-title">Tentang Saya</h3>
+          <p>Mahasiswa Teknik Informatika berpengalaman magang front-end developer, kreatif, dan adaptif teknologi modern. Mencari tantangan baru di bidang pengembangan web.</p>
+        </div>
+        <div class="section">
+          <h3 class="section-title">Keahlian</h3>
+          <div class="skill"><div class="skill-name"><span>HTML & CSS</span><span>90%</span></div><div class="skill-bar"><div class="skill-level" style="width:90%"></div></div></div>
+          <div class="skill"><div class="skill-name"><span>JavaScript</span><span>80%</span></div><div class="skill-bar"><div class="skill-level" style="width:80%"></div></div></div>
+          <div class="skill"><div class="skill-name"><span>React.js</span><span>75%</span></div><div class="skill-bar"><div class="skill-level" style="width:75%"></div></div></div>
+          <div class="skill"><div class="skill-name"><span>Vue.js</span><span>70%</span></div><div class="skill-bar"><div class="skill-level" style="width:70%"></div></div></div>
+        </div>
+        <div class="section">
+          <h3 class="section-title">Pendidikan</h3>
+          <ul><li><strong>S1 Teknik Informatika</strong> - Universitas Telkom (2020 - 2024)</li></ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="section">
+          <h3 class="section-title">Pengalaman Magang</h3>
+          <div class="experience-item"><h4>Front-End Developer Intern</h4><span>PT. Teknologi Kreatif • Jun 2023 - Aug 2023</span><p>Mendesain ulang landing page, meningkatkan engagement 25%. Mengembangkan komponen React, mempercepat deployment bersama tim.</p></div>
+        </div>
+        <div class="section">
+          <h3 class="section-title">Proyek Sampingan</h3>
+          <ul><li><strong>Portfolio Site</strong>: <a href="#">github.com/andi-portfolio</a></li><li><strong>Vue To-Do App</strong>: Aplikasi manajemen tugas sederhana</li></ul>
+        </div>
+        <div class="section">
+          <h3 class="section-title">Media Sosial</h3>
+          <ul><li>🔗 <a href="#">linkedin.com/in/andifirmansyah</a></li><li>💻 <a href="#">github.com/andifirmansyah</a></li></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">© 2025 Andi Firmansyah. All Rights Reserved.</div>
+  </div>
+</body>
+</html>
